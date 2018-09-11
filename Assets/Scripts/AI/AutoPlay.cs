@@ -5,7 +5,7 @@ using UnityEngine;
 public class AutoPlay : MonoBehaviour {
     private Timer timer;
     private float startTime;
-    public bool autoPlay = true; 
+    public bool autoPlay = false; 
     public int autoTimerDuration = 5;
     private int screenIndex = 1;
 

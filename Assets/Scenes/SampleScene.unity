@@ -367,8 +367,8 @@ Camera:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -422,6 +422,8 @@ GameObject:
   - component: {fileID: 1315066339}
   - component: {fileID: 1315066341}
   - component: {fileID: 1315066340}
+  - component: {fileID: 1315066343}
+  - component: {fileID: 1315066344}
   - component: {fileID: 1315066342}
   m_Layer: 5
   m_Name: Image
@@ -460,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -498,6 +500,31 @@ MonoBehaviour:
   thirdImage: {fileID: 21300000, guid: e6e45bf53d46d4c45b2db104d8281f23, type: 3}
   fourthImage: {fileID: 21300000, guid: b7d9a3de99d60428da6e43a683c3e2dd, type: 3}
   fifthImage: {fileID: 21300000, guid: c1213c61298fc4006a9558da07af0c90, type: 3}
+  screen: {fileID: 0}
+--- !u!114 &1315066343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315066338}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35e5907885ab4d13ae18014589e966d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeRate: 1
+--- !u!114 &1315066344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315066338}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed2db9e23a16f4f71a037e643787c72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Image: {fileID: 1315066340}
 --- !u!1 &2005493032
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +534,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2005493034}
   - component: {fileID: 2005493033}
+  - component: {fileID: 2005493036}
+  - component: {fileID: 2005493035}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -525,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e556a974f6d4df7b1ba4d72fa75165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoPlay: 1
+  autoPlay: 0
   autoTimerDuration: 5
 --- !u!4 &2005493034
 Transform:
@@ -540,3 +569,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2005493035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005493032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d450385e9bb4aa882ae334f6b3cdd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2005493036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2005493032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b688692581aa41ff80905a01630f36c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoPlay: 1
+  autoPlayInterval: 6
+  slideNum: 1

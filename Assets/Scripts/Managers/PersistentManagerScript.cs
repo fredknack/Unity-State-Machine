@@ -8,6 +8,7 @@ public class PersistentManagerScript : MonoBehaviour {
 
     public bool autoPlay = true;
     public int autoPlayInterval = 6;
+    public int slideNum = 1;
 
     private void Awake()
     {
