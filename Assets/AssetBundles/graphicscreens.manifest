@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1564384249
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 203cd6a3e6c01c52f574b9a434de6285
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea5a42e0fd8ea905efa7aa926a3b8944
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Graphics/Screens/JumpWire-Logo-Blue.png
+- Assets/Graphics/Screens/JumpWire-Logo-Yellow.png
+- Assets/Graphics/Screens/JumpWire-Logo-Green.png
+- Assets/Graphics/Screens/JumpWire-Logo.png
+- Assets/Graphics/Screens/JumpWire-Logo-Light-Blue.png
+Dependencies: []
